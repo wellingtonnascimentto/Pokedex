@@ -12,7 +12,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/index", (req, res) => {
-  res.render("index");
+    const pokedex = ["Número","Nome","Tipo","Imagem","Descrição","Altura","Peso","Categoria","Habilidade"]
+  res.render("index", {lista: pokedex});
 });
 
 app.get("/cadastro", (req, res) => {
