@@ -1,0 +1,98 @@
+@import url(https://www.vhv.rs/dpng/d/500-5004868_incineroar-pokedex-png-download-pokemon-incineroar-transparent-png.png);
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar{
+    color: blue;
+    padding-top:5px !important; 
+    padding-bottom:5px !important;
+    height: 60px !important;
+    margin-bottom: 100px;
+    text-align: center;
+    background: url(https://i.pinimg.com/474x/90/1e/37/901e371161388b490c7926c883576ede.jpg);
+    background-size: cover;
+  }
+  .navbar h1{
+    font-family: Pokemon;  
+    font-size: 35px;
+    text-shadow: 
+        -1px -1px 0px rgb(0, 0, 0), 
+        -1px 1px 0px rgb(0, 0, 0),                    
+        1px -1px 0px rgb(0, 0, 0),                  
+        1px 0px 0px rgb(0, 0, 0);
+  }
+
+  section#inscrever form div input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+}  
+
+section#inscrever {
+    color: rgb(19, 19, 16);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 0, 21);
+    margin: 0 20rem 10rem 20rem;
+    box-shadow: 0 0 1rem #00000060;
+    border-radius: 1rem;
+}
+
+.home{
+    text-align: center;
+}
+    .floatLeft {
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 0;
+        float: left;
+        vertical-align: middle;
+        background: #df7c4f;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 28px;
+        padding: 15px 15px 32px 15px;
+        border: 2px solid #000;
+    }
+
+h1.cad{
+    color: rgb(255, 0, 21);
+}
+
+section#inscrever form button {
+    border: 1px solid #3359ec;
+    background-color: #fff;
+    color: #3359ec;
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+}
+
+body{
+    background: url(https://cdnb.artstation.com/p/assets/images/images/028/432/069/large/nishx-nadkarni-pikachu-1.jpg?1594460541);
+    background-size: cover;
+}

@@ -8,17 +8,20 @@
     <title>POKEDÉX</title>
 </head>
 <body>
+    <nav class="navbar navbar-center navbar">
+        <div>
+            <div>
+                <a class="floatLeft" href="/">INICIO</a>
+            </div>
+            <div>
+                <a class="floatLeft" href="/cadastro">CADASTRO</a>
+            </div>
+        </div>
+    </nav>
     <header>
-    <h1>POKEDÉX</h1>
+    <h1><%= titulo %></h1>
     </header>
-    <div>
-        <h2>POKEDÉX</h2>
-    </div>
 
-    <ul>
-        <% lista.forEach(item => { %>
-            <li><%= item %></li>
-        <% }) %> 
-    </ul>
+   
 </body>
 </html>

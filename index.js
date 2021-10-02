@@ -7,14 +7,24 @@ const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-  res.send("Bem vindo");
-});
+app.use(express.urlencoded());
 
-app.get("/index", (req, res) => {
-    const pokedex = ["Número","Nome","Tipo","Imagem","Descrição","Altura","Peso","Categoria","Habilidade"]
-  res.render("index", {lista: pokedex});
-});
+  app.get("/", function(req, res) {
+  const pokedex = [
+    {
+      Número:001,
+      Nome:"Bulbasaur",
+      Tipo:"Grama, Poção",
+      Imagem:"",
+      Descrição:"",
+      Altura:"0.7",
+      Peso:"6.9",
+      Categoria:"S",
+      Habilidade:"Overgrow",
+    },
+  ]
+  res.render("index", {titulo: "Pokedex Master", pokedex:pokedex});
+  });
 
 app.get("/cadastro", (req, res) => {
     res.render("cadastro");
@@ -23,6 +33,31 @@ app.get("/cadastro", (req, res) => {
   app.get("/detalhes", (req, res) => {
     res.render("detalhes");
   });
+
+app.post("/new", (req, res) => {
+  const {
+    Número,
+    Nome,
+    Tipo,
+    Imagem,
+    Descrição,
+    Altura,
+    Peso,
+    Categoria,
+    Habilidade} = req.body;
+  pokedex.push({
+    Número: Número,
+    Nome: Nome,
+    Tipo: Tipo,
+    Imagem: Imagem,
+    Descrição: Descrição,
+    Altura: Altura,
+    Peso: Peso,
+    Categoria: Categoria,
+    Habilidade: Habilidade});
+    message = "Seu cadastro foi realizado!!!"  
+    res.redirect("/")
+}); 
 
 app.listen(port, () =>
   console.log(`Servidor rodando em http://localhost:${port}`)
