@@ -19,7 +19,7 @@ html {
     height: 60px !important;
     margin-bottom: 100px;
     text-align: center;
-    background: url(https://i.pinimg.com/474x/90/1e/37/901e371161388b490c7926c883576ede.jpg);
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvb0QTuTaULz55Kb-Q9jWDg9NKkR9QtQiohw&usqp=CAU);
     background-size: cover;
   }
   .navbar h1{
@@ -93,6 +93,55 @@ section#inscrever form button {
 }
 
 body{
-    background: url(https://cdnb.artstation.com/p/assets/images/images/028/432/069/large/nishx-nadkarni-pikachu-1.jpg?1594460541);
+    background: url(https://img.freepik.com/fotos-gratis/fundo-vermelho-grunge_1048-8960.jpg?size=626&ext=jpg);
     background-size: cover;
 }
+  .card_content{
+    display: flex;
+    justify-content: center;
+  }
+  .nome{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+  }
+  .desc{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(14, 13, 13); text-shadow: rgb(248, 242, 242) 0.1em 0.1em 0.2em
+  }
+
+  section#message {
+    padding: 1.5rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
