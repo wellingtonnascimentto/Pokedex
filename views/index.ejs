@@ -17,11 +17,21 @@
                 <a class="floatLeft" href="/cadastro">CADASTRO</a>
             </div>
         </div>
-    </nav>
-    <header>
-    <h1><%= titulo %></h1>
-    </header>
-
-   
+    </nav> 
+    <main class="index">
+        <% pokedex.forEach(pokedex => { %>
+            <section class="wrapper">
+                <article class="card_content">
+                    <img class="img" src=<%= pokedex.Imagem %>><br>
+                   
+                </article>
+                <h2 class="desc">NOME:</h2> 
+                <p class="nome"><br> <%= pokedex.Nome %></p>
+                <h2 class="desc"><br>TIPO:</h2> 
+                <p class="nome"><br> <%= pokedex.Tipo %></p>
+            </section>
+            <%})%>
+    </main>
+<script src="/js/script.js"></script>   
 </body>
 </html>
